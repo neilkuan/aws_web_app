@@ -175,6 +175,12 @@ def upload_file():
                 <!doctype html>
                 <title>Upload Success</title>
                 <style>
+                body {
+                  background-image: url("https://i.imgur.com/W7d0Df4.png");
+                  background-repeat: no-repeat;
+                  background-position: top right;
+                  background-size: 660px 820px;
+                }
                 div {
                   background-image: linear-gradient(white, green);
                 }
@@ -189,7 +195,6 @@ def upload_file():
                 <form method=post>
                   <input type=submit value=back name=back>
                 </form>
-                <dir style="height:900px"></div>
                 '''
 
 
@@ -209,17 +214,24 @@ def upload_file():
             
 
 
+    
     return '''
     <!doctype html>
     <title>Upload new File</title>
     <style>
     div {
-      background-image: linear-gradient(while, green);
+      background-image: linear-gradient(white, green);
     }
     h1,h2 {
-        font-fmily: verdana;
-        text-shadow: 2px 2px 5px green;
-        }
+      font-family: verdana;
+      text-shadow: 2px 2px 5px green;
+    }
+    body {
+      background-image: url("https://i.imgur.com/W7d0Df4.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 660px 820px;
+    }
     </style>
     <h1>Upload new File</h1>
     <form method=post enctype=multipart/form-data>
@@ -232,9 +244,5 @@ def upload_file():
     <form method=post>
       <input type=submit value=show name=show>
     </form>
-    <br>
-    <br>
-    <h3>VERSION 1.0.1 date 2019/01/31 </h3>
-    <div style="height:700px"></div>
     '''
 app.run(host='0.0.0.0')
