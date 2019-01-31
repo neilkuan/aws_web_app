@@ -232,6 +232,9 @@ def upload_file():
     <form method=post>
       <input type=submit value=show name=show>
     </form>
+    <br>
+    <br>
+    <h3>VERSION 1.0.1 date 2019/01/31 </h3>
     <div style="height:700px"></div>
     '''
 app.run(host='0.0.0.0')
