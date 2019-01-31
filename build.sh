@@ -1,6 +1,6 @@
 set -ex
 #set registry
-USERNAME=129729052534.dkr.ecr.ap-northeast-1.amazonaws.com
+USERNAME=204065533127.dkr.ecr.ap-northeast-1.amazonaws.com
 # image name
 IMAGE=rpao_webtest
 docker build -t $USERNAME/$IMAGE:latest .
