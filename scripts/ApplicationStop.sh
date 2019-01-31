@@ -1,6 +1,6 @@
 #!/bin/bash
-if [ `docker ps | grep cc104_devops | wc -l`  = 1 ]
+if [ `docker ps | grep flask-devops | wc -l`  = 1 ]
 then
-        docker stop cc104_devops
-        docker rm  cc104_devops
+        docker stop flask-devops
+        docker rm  flask-devops
 fi
